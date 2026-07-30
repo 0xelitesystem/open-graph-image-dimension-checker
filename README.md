@@ -34,6 +34,10 @@ Everything runs client-side. No analytics, no cookies, no network calls, no loca
 - [meta-og-tag-generator](https://github.com/0xelitesystem/meta-og-tag-generator)
 - [image-seo-and-alt-text-reference](https://github.com/0xelitesystem/image-seo-and-alt-text-reference)
 
+## More
+
+Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
+
 ## License
 
 MIT, copyright 0xelitesystem 2026.
