@@ -18,15 +18,36 @@ Single HTML file. Runs in the browser with no build step, no server, no tracking
 - Not a file-size or format validator. It works from pixel dimensions
 - Not an uploader. Dropped images are read locally and never sent anywhere
 
-## Use it
+## Use
 
 Open the hosted page: https://0xelitesystem.github.io/open-graph-image-dimension-checker/
 
 Or download `index.html` and open it in any browser. It works offline.
 
+1. Type a width and height in pixels, or drop an image on the drop zone (or click it to pick a file) to read its dimensions.
+2. Read the aspect ratio and megapixels.
+3. Check the pass or check marker on each Open Graph and Twitter card rule.
+
+## Why this exists
+
+Share images get cropped or rejected when they miss the Open Graph or Twitter card size rules, and most checkers want you to upload the file first. This is one HTML file that reads the dimensions locally, with no upload, no tracking, and no network calls. MIT licensed.
+
 ## Privacy
 
-Everything runs client-side. No analytics, no cookies, no network calls, no local storage.
+Everything runs client-side. No analytics, no cookies, no network calls, no local storage of anything you enter. The only thing the page writes to your browser is your light or dark theme choice, saved in localStorage under the key `theme` when you press the theme button, so the page opens in the same theme next time. Clear site data to remove it.
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/open-graph-image-dimension-checker
+cd open-graph-image-dimension-checker
+```
+
+Then open `index.html` in any browser. Or serve the folder with `python -m http.server` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one file, `index.html`, with its CSS and JavaScript inline.
 
 ## Related
 
